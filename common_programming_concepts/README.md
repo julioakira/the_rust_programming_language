@@ -102,3 +102,6 @@
 - Might have the type declared or infered by the compiler.
 - To access array elements, we use the square bracket notation `arr[index]`.
 - When an out-of-bounds value is accessed, the compiler exits with a `panic!`.
+
+## Functions
+

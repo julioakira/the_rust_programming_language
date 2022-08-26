@@ -105,3 +105,11 @@
 
 ## Functions
 
+- Defined by the `fn` keyword followed by the name and curly braces.
+- By convention, are named using snake case.
+
+### Return Types, Statements and Expressions
+
+- Statements are instructions to perform a given action without returning a value.
+- Expressions evaluate to a computed value.
+- They may or may not return a value, and whey they do the return type must be specified with `->`

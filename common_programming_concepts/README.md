@@ -113,3 +113,40 @@
 - Statements are instructions to perform a given action without returning a value.
 - Expressions evaluate to a computed value.
 - They may or may not return a value, and whey they do the return type must be specified with `->`
+
+## Comments
+
+- Specified with `//` in each commented line. They can appear at the end of the line, after some code or fill an entire line.
+
+## Control Flow
+
+### `if` expressions and non-looped conditionals
+
+- Unlike other languages, Rust does not require parenthesis in the expression to be evaluated. Although the parenthesis is not mandatory, it might be used but the compiler will throw a warning.
+- The `if` statement code to be executed must be enclosed in curly braces.
+
+#### Using `if` in a `let` statement
+
+- Since `if` is an expression, it might be used to assign it's result to a variable value, in the right side of a `let` statement. The assigned types should be the same.
+
+### Loops and Repetition
+
+- Rust has three kinds of loops: `loop`, `while` and `for`.
+
+#### Repeating code with `loop`
+
+- One of `loop` the common uses involves retrying an operation that might fail.
+- Might also be assigned to a variable.
+- A value may be returned if placed after the `break` statement.
+- With the `loop` keyword Rust can execute a block of code over and over again forever or until broken with `break`.
+- Labels can be assigned to loops, to desambiguate between nested loops. To specify labels, use single quotes before the `loop` keyword, and after the `break` statement like `'label_name': loop {break 'label_name'}`
+
+#### Conditional loops with `while`
+
+- The `while` keyword defined a conditional loop, where a condition must be specified in order for the iteration to run. When the given condition is evaluated to false, the program internally calls a `break` and breaks away from the loop.
+
+#### Collection looping with `for`
+
+- When we need to loop through an array or collection, there are some available options to be used, such as `while` and `for`. 
+- With `while` we need to specify a condition involving the collection `index` to be evaluated. This approach might be problematic, since we have to continually be concerned with the validity of the `index` to be accessed. If for some reason it gets out of bounds, the program panics.
+- A more concise and fail-safe alternative is using a `for` loop, like `for element in array {// do something}`. With this approach, we do not need to worry about the index.

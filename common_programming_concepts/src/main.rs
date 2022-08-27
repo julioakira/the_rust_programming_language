@@ -55,4 +55,28 @@ fn main() {
     println!("Accessing values by index in the first array: {}", td_arr[0]);
     println!("Accessing values by index in the second array: {}", ti_arr[0]);
     println!("Accessing values by index in the third array: {}", sv_arr[0]);
+
+    // if and else expressions
+    let number: i32 = 5;
+    if number <= 5 {
+        println!("The number is five :)");
+    } else {
+        println!("The number is not five :(");
+    }
+
+    // if and else if expressions
+    if number % 4 == 0 {
+        println!("number is divisible by 4");
+    } else if number % 3 == 0 {
+        println!("number is divisible by 3");
+    } else if number % 2 == 0 {
+        println!("number is divisible by 2");
+    } else {
+        println!("number is not divisible by 4, 3, or 2");
+    }
+
+    // using if in a let variable declaration
+    let condition: bool = true;
+    let conditional_number: i32 = if condition { 5 } else { 6 };
+    println!("The conditional number is: {}", conditional_number);
 }
